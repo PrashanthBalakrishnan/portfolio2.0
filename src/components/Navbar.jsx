@@ -19,15 +19,7 @@ export const Navbar = () => {
         <li className="p-4">
           <a
             className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="#"
-          >
-            Home
-          </a>
-        </li>
-        <li className="p-4">
-          <a
-            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="#"
+            href="about"
           >
             About
           </a>

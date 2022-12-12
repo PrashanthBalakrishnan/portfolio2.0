@@ -3,7 +3,7 @@ import profilePic from '../assets/ProfilePic.jpg';
 
 export const About = () => {
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <div id="about" className="w-full bg-white py-16 px-4">
       <h1 className="text-center font-bold md:text-3xl sm:text-2xl text-xl mb-10">
         About Me
       </h1>
