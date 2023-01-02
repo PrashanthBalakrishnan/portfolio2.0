@@ -64,7 +64,7 @@ export const Projects = () => {
           </a>
 
           <a
-            href="https://peaceful-tiramisu-232039.netlify.app/"
+            href="https://fancy-mochi-945aa1.netlify.app/"
             className="cursor cursor-pointer flex flex-col"
           >
             <img className="w-[20em] mx-auto" src={Project5} alt="project4" />
