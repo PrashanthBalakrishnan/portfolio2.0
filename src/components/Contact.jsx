@@ -33,8 +33,8 @@ export const Contact = () => {
 
   return (
     <section id="contact">
-      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white ">
+      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white ">
           Contact Me
         </h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-8">
@@ -52,7 +52,7 @@ export const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               className="shadow-sm  border border-gray-300 text-black text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-              placeholder="name@email.com"
+              placeholder="Enter Name"
               required
             />
           </div>
@@ -70,7 +70,7 @@ export const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
               name="user_email"
               className="block p-3 w-full text-sm text-black bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 "
-              placeholder="Subject"
+              placeholder="Enter Email"
               required
             />
           </div>
@@ -88,7 +88,7 @@ export const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
               rows="6"
               className="block p-2.5 w-full text-sm text-black bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
-              placeholder="Leave a comment..."
+              placeholder="Enter Message"
             ></textarea>
           </div>
           <button

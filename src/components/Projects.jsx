@@ -3,13 +3,16 @@ import Project1 from '../assets/Project1.png';
 import Project2 from '../assets/Project2.png';
 import Project3 from '../assets/Project3.png';
 import Project4 from '../assets/Project4.png';
+import Project5 from '../assets/Project5.png';
+import { HashLink as Link } from 'react-router-hash-link';
+
 export const Projects = () => {
   return (
     <div id="projects">
-      <h1 className="text-white text-center text-4xl py-8 font-bold">
-        Projects
-      </h1>
       <div className="w-full py-[5rem] px-4">
+        <h1 className="text-white text-center text-4xl py-8 font-bold">
+          Projects
+        </h1>
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8">
           <a
             href="https://bright-tartufo-ce9b98.netlify.app/"
@@ -22,37 +25,54 @@ export const Projects = () => {
             </p>
           </a>
 
-          <a href="" className="cursor cursor-pointer flex flex-col">
-            <img className="w-[20em] mx-auto" src={Project2} alt="project1" />
+          <a
+            href="https://courageous-cannoli-05844a.netlify.app/"
+            className="cursor cursor-pointer flex flex-col"
+          >
+            <img className="w-[20em] mx-auto" src={Project2} alt="project2" />
             <h2 className="text-white text-center font-bold">
-              Typing Speed Game
+              Picture Shopping Site
             </h2>
             <p className="text-white text-center">
-              Technology Used: HTML CSS React ReactHooks
+              Technology Used: HTML CSS React(ReactHooks, ReactRouter)
             </p>
           </a>
 
           <a
-            href="https://musical-rabanadas-cbdab7.netlify.app/"
+            href="https://chipper-dieffenbachia-948657.netlify.app"
             className="cursor cursor-pointer flex flex-col"
           >
-            <img className="w-[20em] mx-auto" src={Project3} alt="project1" />
+            <img className="w-[20em] mx-auto" src={Project3} alt="project3" />
             <h2 className="text-white text-center font-bold">
-              Card Component(Responsive)
+              Calculator using React Reducer
             </h2>
-            <p className="text-white text-center">Technology Used: HTML SCSS</p>
+            <p className="text-white text-center">
+              Technology Used: HTML CSS React(ReactHooks)
+            </p>
           </a>
 
           <a
             href="https://shiny-puffpuff-b0b6ac.netlify.app/"
             className="cursor cursor-pointer flex flex-col"
           >
-            <img className="w-[20em] mx-auto" src={Project4} alt="project1" />
+            <img className="w-[20em] mx-auto" src={Project4} alt="project4" />
             <h2 className="text-white text-center font-bold">
               BBQ Form (Mobile/Tablet)
             </h2>
 
             <p className="text-white text-center">Technology Used: HTML CSS</p>
+          </a>
+
+          <a
+            href="https://peaceful-tiramisu-232039.netlify.app/"
+            className="cursor cursor-pointer flex flex-col"
+          >
+            <img className="w-[20em] mx-auto" src={Project5} alt="project4" />
+            <h2 className="text-white text-center font-bold">Weather App</h2>
+
+            <p className="text-white text-center">
+              Technology Used: HTML CSS React Axios WeatherAPI
+            </p>
           </a>
         </div>
       </div>

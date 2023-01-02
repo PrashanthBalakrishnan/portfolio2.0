@@ -1,52 +1,52 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { SlUser } from 'react-icons/sl';
-
+import { HashLink as Link } from 'react-router-hash-link';
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
-
+  const contact = 'Contact Me';
   const handleNav = () => {
     setNav(!nav);
   };
   return (
     <div className="flex text-gray-300 items-center h-24 max-w-[1240px] mx-auto px-4 justify-between">
       <h1 className="w-full text-3xl font-bold text-[#1D85E5]">
-        <a href="#">
+        <Link to="#home">
           <SlUser size={40} />
-        </a>
+        </Link>
       </h1>
       <ul className="hidden md:flex font-semibold">
         <li className="p-4">
-          <a
-            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="about"
+          <Link
+            to="#about"
+            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2 "
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="#"
+          <Link
+            to="#projects"
+            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2 "
           >
             Projects
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="#"
+          <Link
+            to="#qual"
+            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2 "
           >
             Qualification
-          </a>
+          </Link>
         </li>
         <li className="p-4">
-          <a
-            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2 py-2"
-            href="#"
+          <Link
+            to="#contact"
+            className="hover:text-[#1D85E5] hover:border-[#1D85E5] border-transparent border-b-2  py-2   "
           >
-            Contact
-          </a>
+            Contact&nbsp;Me
+          </Link>
         </li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
@@ -64,25 +64,30 @@ export const Navbar = () => {
         }
       >
         <h1 className="w-full text-3xl font-bold  m-8">
-          {' '}
           <SlUser />
         </h1>
 
         <ul className="uppercase p-4">
-          <li className="p-4 border-b border-gray-600 ">
-            <a href="#">Home</a>
+          <li
+            onClick={() => setNav(!nav)}
+            className="p-4 border-b border-gray-600"
+          >
+            <Link to="#about">About</Link>
           </li>
-          <li className="p-4 border-b border-gray-600 ">
-            <a href="#">About</a>
+          <li
+            onClick={() => setNav(!nav)}
+            className="p-4 border-b border-gray-600 "
+          >
+            <Link to="#projects">Projects</Link>
           </li>
-          <li className="p-4 border-b border-gray-600 ">
-            <a href="#">Projects</a>
+          <li
+            onClick={() => setNav(!nav)}
+            className="p-4 border-b border-gray-600 "
+          >
+            <Link to="#qual">Qualification</Link>
           </li>
-          <li className="p-4 border-b border-gray-600 ">
-            <a href="#">Qualification</a>
-          </li>
-          <li className="p-4">
-            <a href="#">Contact Me</a>
+          <li onClick={() => setNav(!nav)} className="p-4">
+            <Link to="#contact">Contact Me</Link>
           </li>
         </ul>
       </div>

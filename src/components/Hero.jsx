@@ -1,8 +1,10 @@
 import React from 'react';
 import Typed from 'react-typed';
+import { HashLink as Link } from 'react-router-hash-link';
+
 export const Hero = () => {
   return (
-    <div className="text-white">
+    <div id="home" className="text-white">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center md:text-3xl sm:text-2xl text-xl">
         <Typed
           className="md:text-3xl sm:text-2xl text-xl text-gray-300"
@@ -20,15 +22,20 @@ export const Hero = () => {
           startDelay={3000}
         />
         <div className="flex justify-center mt-10">
-          <button
+          <Link
             type="button"
-            className="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-[1.2rem] px-4 py-2 text-center mr-2 mb-2"
+            to="#projects"
+            className="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-[1.2rem] px-4 py-2 text-center mr-2 mb-2 flex justify-center items-center"
           >
             My Work
-          </button>
-          <button className="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-[1.2rem] px-4 py-2 text-center mr-2 mb-2">
+          </Link>
+          <Link
+            type="button"
+            to="#contact"
+            className="text-white bg-blue-600 hover:bg-blue-800 font-medium rounded-lg text-[1.2rem] px-4 py-2 text-center mr-2 mb-2 flex justify-center items-center"
+          >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
     </div>

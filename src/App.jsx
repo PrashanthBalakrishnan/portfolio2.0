@@ -4,6 +4,7 @@ import { Hero } from './components/Hero';
 import { Navbar } from './components/Navbar';
 import { Projects } from './components/Projects';
 import { Qualification } from './components/Qualification';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Projects />
       <Qualification />
+      <Projects />
       <Contact />
     </div>
   );

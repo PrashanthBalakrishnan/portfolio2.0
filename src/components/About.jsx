@@ -3,13 +3,13 @@ import profilePic from '../assets/ProfilePic.jpg';
 
 export const About = () => {
   return (
-    <div id="about" className="w-full bg-white py-16 px-4">
+    <div id="about" className="w-full bg-[#FFFDFA] py-1 px-4">
       <h1 className="text-center font-bold md:text-3xl sm:text-2xl text-xl mb-10">
         About Me
       </h1>
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <img
-          className="w-[300px] mx-auto my-4 rounded-md"
+          className="w-[200px] mx-auto my-4 rounded-md"
           src={profilePic}
           alt="Prashanth"
         />
