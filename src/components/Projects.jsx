@@ -52,15 +52,15 @@ export const Projects = () => {
           </a>
 
           <a
-            href="https://shiny-puffpuff-b0b6ac.netlify.app/"
+            href="https://friendly-semolina-28b290.netlify.app/"
             className="cursor cursor-pointer flex flex-col"
           >
             <img className="w-[20em] mx-auto" src={Project4} alt="project4" />
             <h2 className="text-white text-center font-bold">
-              BBQ Form (Mobile/Tablet)
+            Adopt a Pet Site
             </h2>
 
-            <p className="text-white text-center">Technology Used: HTML CSS</p>
+            <p className="text-white text-center">Technology Used: HTML CSS React ReactRouter ReactQuery</p>
           </a>
 
           <a
